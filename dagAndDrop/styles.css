@@ -6,6 +6,10 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+  background-image: url("https://images.unsplash.com/photo-1622099330140-69125ac0d6a9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
   background-color: #e5e5e5;
   display: flex;
   padding-top: 5rem;
@@ -32,12 +36,12 @@ body {
 .item {
   width: 150px;
   height: 66px;
-  border: 1px solid #eee;
+  border: 1px solid #04103f;
   box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
   border-radius: 20px;
-  background: #f7f6f7;
+  background: rgba(247, 246, 247, 0.96);
   padding: 0.8rem 1rem;
-  color: #828282;
+  color: #f60a0a;
   text-align: center;
   cursor: grab;
 }
@@ -52,24 +56,36 @@ body {
 }
 
 .start {
-  background: linear-gradient(90deg, #ff85e4 0%, #229efd 179.25%);
+  display: flex;
+  justify-content: center;
+  /*background: linear-gradient(90deg, #ff85e4 0%, #229efd 179.25%);*/
+  background-color: #68e0cf;
+  border: 1px solid #04103f;
 }
 
 .progress {
-  background: linear-gradient(90deg, #209cff 0%, #68e0cf 100%);
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(90deg, #68e0cf  0%, #209cff 100%);
+  border: 1px solid #04103f;
 }
 
 .done {
-  background: linear-gradient(90deg, #84fab0 0%, #8fd3f4 100%);
+  display: flex;
+  justify-content: center;
+  background-color: #209cff;
+  /*background: linear-gradient(90deg, #84fab0 0%, #8fd3f4 100%);*/
+  border: 1px solid #04103f;
 }
 
 .hold {
-  border: 5px solid green;
+  border: 3px solid #8ed7ed;
 
 }
 .hide{
   display: none;
 }
 .hovered{
-  border-top: 2px solid #8ed7ed;
+  border: 4px #84fab0  dotted;
+  border-radius: 20px;
 }
