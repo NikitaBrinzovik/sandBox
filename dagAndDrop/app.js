@@ -5,6 +5,7 @@ chosenItem.addEventListener('dragstart', dragstart)
 chosenItem.addEventListener('dragend', dragend)
 
 for (const placeholder of placeholders) {
+
     placeholder.addEventListener('dragover', dragover)
     placeholder.addEventListener('dragenter', dragenter)
     placeholder.addEventListener('dragleave', dragleave)
@@ -12,6 +13,7 @@ for (const placeholder of placeholders) {
 }
 
 function dragstart(event) {
+
     event.target.classList.add('hold') // event.target ~ this
     setTimeout(() => {
         event.target.classList.add('hide')
